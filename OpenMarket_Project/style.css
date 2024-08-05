@@ -10,7 +10,7 @@ main {
   margin-top: 100px;
 
   a img {
-    margin-bottom: 70px;
+    margin-bottom: 63px;
   }
 
   form {
@@ -30,39 +30,40 @@ main {
       justify-items: center;
       align-content: center;
       font-weight: 500px;
-      transform: translateY(8px);
+      transform: translateY(18px);
       max-height: 80px;
 
       #buyer,
       #seller {
         align-content: center;
         border: 1px solid #c4c4c4;
-        padding: 20px 78px 20px 77px;
+        padding: 20px 78px 38px 77px;
         border-radius: 10px 10px 0px 0px;
+        max-width: 275px;
+        white-space: nowrap;
       }
       #buyer {
         border-bottom: none;
         position: relative;
-        z-index: 100;
+        z-index: 1000;
         background-color: white;
       }
       #seller {
         background-color: #f2f2f2;
         position: relative;
-        z-index: 2;
+        z-index: -1;
       }
     }
 
     .idpw {
-      /* padding-left: 35px; */
+      padding-top: 34px;
       border: 1px solid #c4c4c4;
       border-radius: 10px;
-      /* border-top: none; */
       box-sizing: border-box;
       max-width: 550px;
 
       position: relative;
-      z-index: 20;
+      z-index: 100;
       background-color: white;
       #id,
       #password {
