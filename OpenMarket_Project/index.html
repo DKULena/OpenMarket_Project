@@ -1,13 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>오픈 마켓</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <main>
+      <a href="메인 홈페이지 url"
+        ><img src="./public/Logo-hodu.png" alt="HODU 오픈 마켓 로고"
+      /></a>
+      <form
+        method="post"
+        action="https://openmarket.weniv.co.kr/accounts/login"
+      >
+        <div class="login-type">
+          <a href="구매회원 로그인 url" id="buyer">구매회원 로그인</a>
+          <a href="판매회원 로그인 url" id="seller">판매회원 로그인</a>
+        </div>
+
+        <div class="idpw">
+          <input type="text" id="id" name="id" placeholder="아이디" />
+          <input type="password" id="password" name="pw" placeholder="비밀번호" />
+
+          <input type="submit" value="로그인" id="login" />
+        </div>
+      </form>
+
+      <div class="account_info">
+        <a href="#">회원가입</a>
+        <span>|</span>
+        <a href="#">비밀번호 찾기</a>
+      </div>
+    </main>
+    <!-- <script type="module" src="/main.js"></script> -->
   </body>
 </html>
